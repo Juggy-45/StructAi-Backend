@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: StructAi-Backend
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    envVars:
+      - key: PORT
+        value: 8000
