@@ -12,7 +12,7 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:5173"])
+CORS(app, origins=["https://structai.netlify.app/"])
 
 # Set upload folder
 UPLOAD_FOLDER = 'uploads'
